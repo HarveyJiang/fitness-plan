@@ -4,211 +4,151 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>程序员减脂计划</title>
-<style>
-  :root {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --accent: #38bdf8;
-    --accent2: #34d399;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --border: #334155;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    padding: 0 16px;
-  }
-  .container { max-width: 800px; margin: 0 auto; padding: 40px 0 80px; }
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 8px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle { text-align: center; color: var(--muted); margin-bottom: 40px; font-size: 0.95rem; }
-  .section { margin-bottom: 32px; }
-  .section-title {
-    font-size: 1.25rem;
-    margin-bottom: 16px;
-    padding-left: 12px;
-    border-left: 3px solid var(--accent);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 12px;
-  }
-  .meal-label {
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .kcal { font-size: 0.8rem; color: var(--accent2); font-weight: 400; }
-  .meal-items { list-style: none; }
-  .meal-items li { padding: 4px 0; padding-left: 20px; position: relative; }
-  .meal-items li::before { content: '•'; position: absolute; left: 4px; color: var(--accent); }
-  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-  th { text-align: left; padding: 10px 12px; background: var(--bg); color: var(--accent); font-weight: 600; font-size: 0.85rem; }
-  td { padding: 10px 12px; border-top: 1px solid var(--border); font-size: 0.9rem; }
-  tr:hover td { background: rgba(56,189,248,0.05); }
-  .tag {
-    display: inline-block;
-    background: rgba(56,189,248,0.15);
-    color: var(--accent);
-    padding: 2px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin: 2px;
-  }
-  .tag.green { background: rgba(52,211,153,0.15); color: var(--accent2); }
-  .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  @media (max-width: 600px) { .principles { grid-template-columns: 1fr; } }
-  .principle {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-  }
-  .principle strong { color: var(--accent2); }
-  .strength-day { margin-bottom: 12px; }
-  .strength-day .day-label { font-weight: 600; color: var(--accent2); margin-bottom: 6px; }
-  .footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1>🏋️ 程序员减脂计划</h1>
-  <p class="subtitle">每日 1500-1800 kcal · 科学饮食 + 运动 · 4-8 周见效</p>
-
-  <!-- 每日食谱 -->
-  <div class="section">
-    <h2 class="section-title">🍽️ 每日食谱</h2>
-
-    <div class="card">
-      <div class="meal-label">☀️ 早餐 <span class="kcal">~350-400 kcal</span></div>
-      <ul class="meal-items">
-        <li>全麦面包 2 片 + 水煮蛋 2 个（吃 1 个蛋黄）</li>
-        <li>无糖豆浆 / 脱脂牛奶 250ml</li>
-        <li>小份水果：苹果半个 / 蓝莓一小把</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <div class="meal-label">🌞 午餐 <span class="kcal">~500-600 kcal</span></div>
-      <ul class="meal-items">
-        <li>糙米饭 / 杂粮饭 一小碗（约 100g 生重）</li>
-        <li>鸡胸肉 / 鱼肉 / 虾仁 150g（少油烹饪）</li>
-        <li>蔬菜随便吃：西兰花、菠菜、生菜、番茄等</li>
-        <li>少量橄榄油 / 凉拌</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <div class="meal-label">🍵 下午加餐 <span class="kcal">~100-150 kcal</span></div>
-      <ul class="meal-items">
-        <li>一小把坚果（约 10 颗杏仁）</li>
-        <li>或一杯无糖酸奶</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <div class="meal-label">🌙 晚餐 <span class="kcal">~400-500 kcal</span></div>
-      <ul class="meal-items">
-        <li>减少主食，用红薯 / 玉米替代</li>
-        <li>瘦牛肉 / 豆腐 100-150g</li>
-        <li>大量蔬菜</li>
-        <li>晚 8 点后尽量不进食</li>
-      </ul>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">🏋️ 减脂计划</a>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">首页</a>
+      <a href="weekly.html">周计划</a>
+      <a href="monthly.html">月计划</a>
+      <a href="exercise.html">运动指南</a>
+      <a href="diet.html">饮食方案</a>
     </div>
   </div>
+</nav>
 
-  <!-- 运动计划 -->
-  <div class="section">
-    <h2 class="section-title">🏃 每日运动计划（工作日）</h2>
-    <div class="card">
-      <table>
-        <thead><tr><th>时段</th><th>内容</th><th>时长</th></tr></thead>
-        <tbody>
-          <tr><td>🌅 早起</td><td>拉伸 + 开合跳</td><td>10 min</td></tr>
-          <tr><td>🕐 午休</td><td>散步</td><td>15-20 min</td></tr>
-          <tr><td>🌆 晚间</td><td>有氧（跑步/跳绳/快走）</td><td>30-40 min</td></tr>
-          <tr><td>💪 晚间</td><td>力量训练</td><td>20 min</td></tr>
-        </tbody>
-      </table>
+<main class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🔥 科学减脂 · 专为程序员设计</div>
+    <h1>4-8 周减脂计划</h1>
+    <p class="hero-desc">每日 1500-1800 kcal · 渐进式训练 · 可持续执行</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">周为一周期</span></div>
+      <div class="stat"><span class="stat-num">1600</span><span class="stat-label">kcal/日均</span></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">天/周训练</span></div>
+      <div class="stat"><span class="stat-num">30</span><span class="stat-label">分钟/次</span></div>
     </div>
-  </div>
+  </section>
 
-  <!-- 力量训练 -->
-  <div class="section">
-    <h2 class="section-title">💪 力量训练轮换（隔天练）</h2>
-    <div class="card">
-      <div class="strength-day">
-        <div class="day-label">A 日</div>
-        <span class="tag">俯卧撑 3×15</span>
-        <span class="tag">深蹲 3×20</span>
-        <span class="tag">平板支撑 3×45s</span>
+  <!-- Quick Nav Cards -->
+  <section class="cards">
+    <a href="weekly.html" class="card-link">
+      <div class="card card-blue">
+        <div class="card-icon">📅</div>
+        <h3>周计划</h3>
+        <p>7 天详细安排，每天吃什么、练什么一目了然</p>
+        <span class="card-arrow">→</span>
       </div>
-      <div class="strength-day">
-        <div class="day-label">B 日</div>
-        <span class="tag green">弓步蹲 3×15</span>
-        <span class="tag green">卷腹 3×20</span>
-        <span class="tag green">臀桥 3×20</span>
+    </a>
+    <a href="monthly.html" class="card-link">
+      <div class="card card-green">
+        <div class="card-icon">📊</div>
+        <h3>月计划</h3>
+        <p>4 周渐进式方案，从适应期到强化期逐步提升</p>
+        <span class="card-arrow">→</span>
       </div>
-      <div style="margin-top:12px; color: var(--muted); font-size:0.9rem;">
-        🚴 周末：户外跑步 / 骑行 / 游泳 40-60 min
+    </a>
+    <a href="exercise.html" class="card-link">
+      <div class="card card-purple">
+        <div class="card-icon">💪</div>
+        <h3>运动指南</h3>
+        <p>有氧 + 力量训练动作详解，适合零基础</p>
+        <span class="card-arrow">→</span>
       </div>
-    </div>
-  </div>
+    </a>
+    <a href="diet.html" class="card-link">
+      <div class="card card-orange">
+        <div class="card-icon">🥗</div>
+        <h3>饮食方案</h3>
+        <p>每日食谱、热量计算、食材替换指南</p>
+        <span class="card-arrow">→</span>
+      </div>
+    </a>
+  </section>
 
-  <!-- 关键原则 -->
-  <div class="section">
-    <h2 class="section-title">📌 关键原则</h2>
+  <!-- Key Principles -->
+  <section class="section">
+    <h2 class="section-title">📌 核心原则</h2>
     <div class="principles">
       <div class="principle">
-        <strong>🔥 热量缺口</strong><br>
-        每日摄入比消耗少 300-500 kcal，不要节食
+        <div class="principle-icon">🔥</div>
+        <strong>热量缺口</strong>
+        <p>每日摄入比消耗少 300-500 kcal，绝不节食</p>
       </div>
       <div class="principle">
-        <strong>🥩 蛋白质充足</strong><br>
-        每公斤体重 1.5-2g 蛋白质，防止掉肌肉
+        <div class="principle-icon">🥩</div>
+        <strong>高蛋白</strong>
+        <p>每公斤体重 1.5-2g 蛋白质，防止掉肌肉</p>
       </div>
       <div class="principle">
-        <strong>💧 多喝水</strong><br>
-        每天 2L+，饭前一杯水有助控制食量
+        <div class="principle-icon">💧</div>
+        <strong>充足饮水</strong>
+        <p>每天 2L+，饭前一杯水有助控制食量</p>
       </div>
       <div class="principle">
-        <strong>😴 充足睡眠</strong><br>
-        保证 7-8 小时，熬夜影响代谢（程序员重点！）
+        <div class="principle-icon">😴</div>
+        <strong>睡眠保障</strong>
+        <p>7-8 小时睡眠，熬夜严重影响代谢</p>
       </div>
       <div class="principle">
-        <strong>📈 循序渐进</strong><br>
-        第一周先适应，别一上来就高强度
+        <div class="principle-icon">📈</div>
+        <strong>循序渐进</strong>
+        <p>第一周适应，逐步增加强度和时长</p>
       </div>
       <div class="principle">
-        <strong>⏰ 坚持 4-8 周</strong><br>
-        会看到明显变化，贵在坚持
+        <div class="principle-icon">🔄</div>
+        <strong>持续坚持</strong>
+        <p>4-8 周见效，养成习惯比短期冲刺重要</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="footer">
-    ⚠️ 本方案仅供参考，非专业医疗建议。请结合自身情况调整，有健康问题请咨询医生。<br>
-    Generated by OpenClaw · 2026-04-22
-  </div>
-</div>
+  <!-- Timeline -->
+  <section class="section">
+    <h2 class="section-title">🗓️ 月度进阶路线</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-week">第 1 周</div>
+        <div class="tl-content">
+          <div class="tl-tag tag-easy">适应期</div>
+          <p>调整饮食结构，建立运动习惯，每天 20 分钟轻度有氧</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">第 2 周</div>
+        <div class="tl-content">
+          <div class="tl-tag tag-mid">提升期</div>
+          <p>增加运动时长至 30 分钟，加入基础力量训练</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">第 3 周</div>
+        <div class="tl-content">
+          <div class="tl-tag tag-hard">强化期</div>
+          <p>有氧 + 力量组合训练，控制碳水摄入</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">第 4 周</div>
+        <div class="tl-content">
+          <div class="tl-tag tag-peak">巩固期</div>
+          <p>保持训练强度，评估效果，调整下月计划</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>⚠️ 本方案仅供参考，非专业医疗建议。请结合自身情况调整，有健康问题请咨询医生。</p>
+  <p>Generated by OpenClaw · 2026</p>
+</footer>
+
+<script src="nav.js"></script>
 </body>
 </html>
