@@ -3,49 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>饮食方案 - 程序员减脂计划</title>
+<title>饮食方案 - 她的减脂计划</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav class="nav"><div class="nav-inner">
-  <a href="index.html" class="logo">🏋️ 减脂计划</a>
+  <a href="index.html" class="logo">🌸 她的减脂计划</a>
   <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
   <div class="nav-links" id="navLinks">
-    <a href="index.html">首页</a><a href="weekly.html">周计划</a><a href="monthly.html">月计划</a><a href="exercise.html">运动指南</a><a href="diet.html">饮食方案</a>
+    <a href="index.html">首页</a><a href="weekly.html">周计划</a><a href="monthly.html">月计划</a><a href="exercise.html">运动指南</a><a href="diet.html">饮食方案</a><a href="cycle.html">生理期适配</a>
   </div>
 </div></nav>
 
 <main class="container">
   <div class="page-header">
     <h1>🥗 饮食方案</h1>
-    <p>吃对比吃少更重要，科学搭配每一餐</p>
+    <p>吃对比吃少更重要，每样食材都标了克数</p>
   </div>
 
-  <!-- Daily Template -->
   <div class="section">
-    <h2 class="section-title">🍽️ 每日饮食模板</h2>
+    <h2 class="section-title">📏 手掌估量法（不用称也能估）</h2>
+    <div class="day-card">
+      <div class="day-grid">
+        <div class="day-section">
+          <h4>快速估量</h4>
+          <ul>
+            <li>1 拳头 ≈ 1 碗米饭 ≈ 200g 蔬菜</li>
+            <li>1 手掌大小 ≈ 100g 肉类</li>
+            <li>1 拇指 ≈ 10g 油脂/坚果</li>
+            <li>1 拳头水果 ≈ 150g</li>
+          </ul>
+        </div>
+        <div class="day-section">
+          <h4>每餐搭配公式</h4>
+          <ul>
+            <li>1 拳头粗粮 + 1 手掌蛋白质</li>
+            <li>+ 2 拳头蔬菜 + 1 拇指好油</li>
+            <li>= 一顿完美的减脂餐 ✅</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">🍽️ 每日饮食模板（~1400 kcal）</h2>
 
     <div class="day-card">
       <div class="day-header">
         <div class="day-num mon" style="width:auto;padding:0 12px;">☀️</div>
-        <div><div class="day-title">早餐 · 350-400 kcal</div><div class="day-subtitle">7:00-8:30 · 碳水 + 蛋白质 + 少量水果</div></div>
+        <div><div class="day-title">早餐 · 350 kcal</div><div class="day-subtitle">7:00-8:30 · 一定要吃！启动代谢</div></div>
       </div>
       <div class="day-grid">
         <div class="day-section">
-          <h4>推荐搭配</h4>
+          <h4>方案 A</h4>
           <ul>
-            <li>全麦面包 2 片 + 水煮蛋 2 个</li>
-            <li>燕麦粥 + 牛奶 + 蓝莓</li>
-            <li>杂粮馒头 + 鸡蛋 + 豆浆</li>
+            <li>燕麦 40g + 脱脂奶 200ml</li>
+            <li>水煮蛋 1 个</li>
+            <li>蓝莓 50g</li>
           </ul>
         </div>
         <div class="day-section">
-          <h4>避免</h4>
+          <h4>方案 B</h4>
           <ul>
-            <li>油条、煎饼果子（高油）</li>
-            <li>白粥 + 咸菜（营养不足）</li>
-            <li>不吃早餐（代谢降低）</li>
+            <li>全麦吐司 1 片 + 牛油果 30g</li>
+            <li>鸡蛋 1 个（煎/煮）</li>
+            <li>牛奶 200ml</li>
           </ul>
+        </div>
+      </div>
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border);">
+        <div class="day-grid">
+          <div class="day-section">
+            <h4>方案 C</h4>
+            <ul>
+              <li>紫薯 80g + 鸡蛋 1 个</li>
+              <li>无糖豆浆 250ml</li>
+            </ul>
+          </div>
+          <div class="day-section">
+            <h4>❌ 避免</h4>
+            <ul>
+              <li>不吃早餐（代谢降低 10%+）</li>
+              <li>油条/煎饼（一份 ≈ 500kcal）</li>
+              <li>白粥+咸菜（营养空白）</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -53,141 +96,155 @@
     <div class="day-card">
       <div class="day-header">
         <div class="day-num tue" style="width:auto;padding:0 12px;">🌞</div>
-        <div><div class="day-title">午餐 · 500-600 kcal</div><div class="day-subtitle">12:00-13:00 · 一天中最丰盛的一餐</div></div>
+        <div><div class="day-title">午餐 · 450-500 kcal</div><div class="day-subtitle">12:00-13:00 · 一天最丰盛的一餐</div></div>
       </div>
       <div class="day-grid">
         <div class="day-section">
-          <h4>推荐搭配</h4>
+          <h4>方案 A</h4>
           <ul>
-            <li>糙米饭 100g + 鸡胸肉 150g + 蔬菜</li>
-            <li>杂粮饭 + 清蒸鱼 + 西兰花</li>
-            <li>荞麦面 + 虾仁 + 菠菜</li>
+            <li>糙米饭 80g（生重）</li>
+            <li>鸡胸肉 120g（黑椒/柠檬煎）</li>
+            <li>西兰花 150g + 少量橄榄油</li>
           </ul>
         </div>
         <div class="day-section">
-          <h4>避免</h4>
+          <h4>方案 B</h4>
           <ul>
-            <li>外卖炒饭/盖浇饭（油多）</li>
-            <li>奶茶配炸鸡（热量炸弹）</li>
-            <li>吃太快（容易过量）</li>
+            <li>荞麦面 80g</li>
+            <li>虾仁 120g（蒜蓉炒）</li>
+            <li>菠菜 150g + 番茄</li>
           </ul>
         </div>
+      </div>
+      <div class="info-box" style="margin-top:12px;">
+        <strong>💡 外食怎么选？</strong>
+        <p>沙县：蒸饺 + 青菜汤 ｜ 食堂：少油菜 + 半份饭 ｜ 便利店：鸡胸肉 + 玉米 + 沙拉 ｜ 避免：盖浇饭、炒面、麻辣烫（汤底高油）</p>
       </div>
     </div>
 
     <div class="day-card">
       <div class="day-header">
         <div class="day-num wed" style="width:auto;padding:0 12px;">🍵</div>
-        <div><div class="day-title">下午加餐 · 100-150 kcal</div><div class="day-subtitle">15:00-16:00 · 防止晚餐暴食</div></div>
+        <div><div class="day-title">下午加餐 · 100-150 kcal</div><div class="day-subtitle">15:00-16:00 · 防止晚上暴食</div></div>
       </div>
-      <div class="day-section" style="padding-left:0;">
-        <h4>推荐选择（任选一）</h4>
-        <ul>
-          <li>坚果一小把（约 10 颗杏仁 / 5 颗核桃）</li>
-          <li>无糖酸奶 1 杯（150ml）</li>
-          <li>苹果 / 梨 1 个</li>
-          <li>黑咖啡 1 杯（提神 + 促进代谢）</li>
-        </ul>
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:8px;">任选一样：</p>
+      <div class="day-grid">
+        <div class="day-section">
+          <ul>
+            <li>无糖酸奶 150ml</li>
+            <li>杏仁 8 颗（约 15g）</li>
+            <li>苹果半个</li>
+          </ul>
+        </div>
+        <div class="day-section">
+          <ul>
+            <li>黑咖啡 1 杯（0 kcal 提神）</li>
+            <li>黄瓜 1 根（随便吃）</li>
+            <li>小番茄 8 颗</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="day-card">
       <div class="day-header">
         <div class="day-num thu" style="width:auto;padding:0 12px;">🌙</div>
-        <div><div class="day-title">晚餐 · 400-500 kcal</div><div class="day-subtitle">18:00-19:30 · 低碳水，高蛋白 + 蔬菜</div></div>
+        <div><div class="day-title">晚餐 · 350-400 kcal</div><div class="day-subtitle">18:00-19:30 · 低碳水，20:00 前吃完</div></div>
       </div>
       <div class="day-grid">
         <div class="day-section">
-          <h4>推荐搭配</h4>
+          <h4>方案 A</h4>
           <ul>
-            <li>红薯/玉米 + 瘦牛肉 + 蔬菜汤</li>
-            <li>豆腐 + 鸡胸肉沙拉</li>
-            <li>杂粮粥 + 清蒸虾 + 凉拌菜</li>
+            <li>红薯 100g</li>
+            <li>清蒸鱼 100g</li>
+            <li>生菜沙拉（油醋汁）</li>
           </ul>
         </div>
         <div class="day-section">
-          <h4>避免</h4>
+          <h4>方案 B</h4>
           <ul>
-            <li>夜宵（烧烤/泡面/零食）</li>
-            <li>大量主食（晚上代谢低）</li>
-            <li>20:00 后进食</li>
+            <li>玉米 1 根</li>
+            <li>豆腐 150g（葱拌/煎）</li>
+            <li>番茄蛋花汤</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Food Swap Guide -->
   <div class="section">
-    <h2 class="section-title">🔄 食材替换指南</h2>
+    <h2 class="section-title">🔄 食材替换表</h2>
     <div class="day-card">
       <table>
-        <thead><tr><th>❌ 替换前</th><th>✅ 替换后</th><th>节省热量</th></tr></thead>
+        <thead><tr><th>❌ 替换前</th><th>✅ 替换后</th><th>省多少</th></tr></thead>
         <tbody>
-          <tr><td>白米饭</td><td>糙米饭 / 杂粮饭</td><td>~30 kcal + 更多纤维</td></tr>
-          <tr><td>可乐 / 奶茶</td><td>黑咖啡 / 绿茶 / 水</td><td>~200-400 kcal</td></tr>
-          <tr><td>炸鸡</td><td>烤鸡胸 / 清蒸鸡</td><td>~200 kcal</td></tr>
-          <tr><td>薯片</td><td>坚果（适量）</td><td>~100 kcal + 好脂肪</td></tr>
-          <tr><td>白面包</td><td>全麦面包</td><td>~50 kcal + 更多纤维</td></tr>
-          <tr><td>沙拉酱</td><td>油醋汁 / 柠檬汁</td><td>~150 kcal</td></tr>
-          <tr><td>猪五花</td><td>鸡胸肉 / 鱼肉</td><td>~200 kcal</td></tr>
-          <tr><td>果汁</td><td>直接吃水果</td><td>~100 kcal + 纤维</td></tr>
+          <tr><td>奶茶（大杯）</td><td>黑咖啡 / 无糖茶</td><td>-400~600 kcal 💥</td></tr>
+          <tr><td>薯片 1 包</td><td>坚果 15g</td><td>-200 kcal</td></tr>
+          <tr><td>白米饭</td><td>糙米/杂粮饭</td><td>+纤维，更饱腹</td></tr>
+          <tr><td>炸鸡排</td><td>煎鸡胸肉</td><td>-250 kcal</td></tr>
+          <tr><td>沙拉酱</td><td>油醋汁/柠檬汁</td><td>-150 kcal</td></tr>
+          <tr><td>果汁</td><td>直接吃水果</td><td>-100 kcal +纤维</td></tr>
+          <tr><td>蛋糕 1 块</td><td>黑巧 20g + 草莓</td><td>-200 kcal</td></tr>
+          <tr><td>火锅（麻辣锅底）</td><td>清汤锅底 + 蘸料少油</td><td>-500 kcal</td></tr>
         </tbody>
       </table>
     </div>
+    <div class="info-box">
+      <strong>💡 一个真相</strong>
+      <p>戒掉每天一杯奶茶，一个月就能少摄入 12000-18000 kcal，相当于减掉 1.5-2.5kg 脂肪。什么都不用做，光戒奶茶就能瘦。</p>
+    </div>
   </div>
 
-  <!-- Protein Guide -->
   <div class="section">
     <h2 class="section-title">🥩 高蛋白食物速查</h2>
     <div class="day-card">
       <table>
-        <thead><tr><th>食物</th><th>每 100g 蛋白质</th><th>热量</th><th>推荐度</th></tr></thead>
+        <thead><tr><th>食物</th><th>蛋白质/100g</th><th>热量</th><th>推荐</th></tr></thead>
         <tbody>
           <tr><td>鸡胸肉</td><td>31g</td><td>165 kcal</td><td>⭐⭐⭐⭐⭐</td></tr>
           <tr><td>虾仁</td><td>24g</td><td>99 kcal</td><td>⭐⭐⭐⭐⭐</td></tr>
-          <tr><td>鸡蛋（全蛋）</td><td>13g</td><td>155 kcal</td><td>⭐⭐⭐⭐⭐</td></tr>
-          <tr><td>牛腱肉</td><td>28g</td><td>150 kcal</td><td>⭐⭐⭐⭐</td></tr>
+          <tr><td>鸡蛋</td><td>13g</td><td>155 kcal</td><td>⭐⭐⭐⭐⭐</td></tr>
           <tr><td>三文鱼</td><td>20g</td><td>208 kcal</td><td>⭐⭐⭐⭐</td></tr>
+          <tr><td>瘦牛肉</td><td>28g</td><td>150 kcal</td><td>⭐⭐⭐⭐（补铁）</td></tr>
           <tr><td>豆腐</td><td>8g</td><td>76 kcal</td><td>⭐⭐⭐⭐</td></tr>
-          <tr><td>脱脂牛奶</td><td>3.4g</td><td>34 kcal</td><td>⭐⭐⭐⭐</td></tr>
           <tr><td>希腊酸奶</td><td>10g</td><td>59 kcal</td><td>⭐⭐⭐⭐</td></tr>
+          <tr><td>毛豆</td><td>11g</td><td>122 kcal</td><td>⭐⭐⭐（好零食）</td></tr>
         </tbody>
       </table>
+      <p style="margin-top:12px;font-size:0.85rem;color:var(--muted);">女性每日蛋白质目标：体重(kg) × 1.5 = 克数。例如 55kg 的人，每天需要约 82g 蛋白质。</p>
     </div>
   </div>
 
-  <!-- Tips -->
   <div class="section">
-    <h2 class="section-title">💡 程序员饮食小贴士</h2>
-    <div class="principles" style="grid-template-columns: repeat(2, 1fr);">
-      <div class="principle">
-        <div class="principle-icon">🍱</div>
-        <strong>周末备餐</strong>
-        <p>周日花 2 小时准备 5 天的鸡胸肉和糙米饭，工作日直接带饭</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">☕</div>
-        <strong>咖啡代替奶茶</strong>
-        <p>黑咖啡 0 热量还提神，一杯奶茶 = 2 碗米饭的热量</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">💧</div>
-        <strong>桌上放水杯</strong>
-        <p>写代码时随手喝水，每天 2L+，饿的时候先喝水</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">🚫</div>
-        <strong>远离工位零食</strong>
-        <p>不买就不会吃，把抽屉里的零食换成坚果</p>
+    <h2 class="section-title">🍳 5 分钟快手减脂餐</h2>
+    <div class="day-card">
+      <div class="day-grid">
+        <div class="day-section">
+          <h4>微波炉系列</h4>
+          <ul>
+            <li>鸡胸肉切片 + 黑椒 → 微波 3 min</li>
+            <li>西兰花 + 少量水 → 微波 2 min</li>
+            <li>红薯戳洞 → 微波 5 min</li>
+            <li>燕麦 + 牛奶 → 微波 2 min</li>
+          </ul>
+        </div>
+        <div class="day-section">
+          <h4>免开火系列</h4>
+          <ul>
+            <li>隔夜燕麦：燕麦+酸奶+蓝莓，冰箱过夜</li>
+            <li>金枪鱼沙拉：罐头+生菜+番茄+柠檬</li>
+            <li>牛油果吐司：全麦吐司+牛油果+蛋</li>
+            <li>酸奶碗：酸奶+坚果+水果</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </main>
 
 <footer class="footer">
-  <p>⚠️ 本方案仅供参考，非专业医疗建议。</p>
-  <p>Generated by OpenClaw · 2026</p>
+  <p>⚠️ 本方案仅供参考，非专业营养建议。</p>
+  <p>🌸 Generated by OpenClaw · 2026</p>
 </footer>
 <script src="nav.js"></script>
 </body>
